@@ -1,0 +1,164 @@
+/* unidade/total*100 */
+*{ 	box-sizing: border-box; }
+html { 	font-size: 20px; }
+
+.container {
+	width: 1200 px;
+	margin: 0 auto;
+}
+
+.img {
+	max-width: 100%;
+	text-align: center;
+} 
+.img img {
+	max-width: 90%
+}
+.img p {
+	text-align: left;
+	font-size: 1.7rem;
+}
+
+.row:after{
+	content:"";
+	display: table;
+	clear: both;
+	}
+.row1 {
+	background-color: #a8c8ca;
+	color: #000;
+	font-size: 2rem;
+	text-align: center;	
+}
+
+.col{
+	position: relative;
+	min-height: 1px;
+	float: left;
+	padding: 0 10px;	
+}
+ /* Definicao das colunas */
+.col1{
+	width: 8.333%;
+}
+.col2{
+	width: 16.666%;
+}
+.col3{
+	width: 25%;
+}
+.col4{
+	width: 33.333%;
+}
+.col5{
+	width: 41.666%;
+}
+.col6{
+	width: 50%;
+}
+.col7{
+	width: 58.333%;
+}
+.col8{
+	width: 66.666%;
+}
+.col9{
+	width: 75%;
+}
+.col10{
+	width: 83,333%;
+}
+.col11{
+	width: 91.666%;
+}
+.col12{
+	width: 100%;
+}
+
+.col.col12 p {
+	font-size: 1.7rem;
+}
+
+.col.col9 p {
+	font-size: 1.5rem;
+}
+
+.col.col3 p {
+	font-size: 1.5rem;
+}
+
+.col.col2 p {
+	font-size: 0.9rem;
+}
+
+/* Fim da definicao das colunas */
+
+@media (min-width: 768px) and (max-width: 1199px){
+	
+		.col2{
+		width: 33.333%;
+	}
+	.col1{
+		width: 16.666%;
+	}
+		.col.col12 p {
+	font-size: 1rem;
+	}
+	.col.col2 p {
+		text-align: center;
+		font-size: 0.7rem;
+	}
+	.col.col2 img {
+		width: 140px;
+		height: 87px;
+	}	
+	.col.col1 img {
+		width: 50px;
+		height: 56px;
+	}	
+	.col.col9 p {
+	font-size: 1rem;
+	}
+	.col.col3 p {
+		font-size: 1rem;
+	}	
+	.col.col9 p {	font-size: 1.2rem;}
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+	
+	.col2{
+		width: 50%;
+	}
+	.col1{
+		width: 25%;
+	}
+	.col9{
+		width: 66.666%;
+	}
+	.col3{
+		width: 33.333%
+	}
+	.col.col12 p {
+	font-size: 0.7rem;
+	}
+	.col.col2 p {
+		text-align: center;
+		font-size: 0.5rem;
+	}
+	.col.col2 img {
+		width: 100px;
+		height: 62px;
+	}
+	.col.col1 img {
+		width: 35px;
+		height: 39px;
+	}	
+	.col.col9 p {
+	font-size: 0.8rem;
+	}
+	.col.col3 p {
+		font-size: 0.8rem;
+	}			
+	.col.col9 p { 	font-size: 0.8rem;}
+}
